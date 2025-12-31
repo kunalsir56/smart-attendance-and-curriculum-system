@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Teacher Dashboard</title>
+</head>
+<body>
+  <h2>Attendance Records</h2>
+  <ul id="list"></ul>
+
+  <script>
+    fetch("http://localhost:3000/api/attendance")
+      .then(res => res.json())
+      .then(data => {
+        const list = document.getElementById("list");
+        data.forEach(a => {
+          const li = document.createElement("li");
+          li.innerText = `Student ${a.studentId} - ${a.method} - ${a.time}`;
+          list.appendChild(li);
+        });
+      });
+  </script>
+</body>
+</html>
