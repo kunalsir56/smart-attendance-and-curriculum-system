@@ -1,0 +1,9 @@
+student.html
+   ↓ clicks button
+app.js
+   ↓ fetch()
+server.js (Express API)
+   ↓ updates data
+attendanceLog
+   ↓
+teacher.html fetches records
