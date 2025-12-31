@@ -1,0 +1,34 @@
+smart-attendance-system-face-qr/
+│
+├── backend/
+│   ├── server.js
+│   ├── routes/
+│   │   ├── students.js
+│   │   ├── teachers.js
+│   │   ├── attendance.js
+│   │   ├── tasks.js
+│   │   └── notifications.js
+│   ├── db/
+│   │   └── schema.sql
+│   └── config/
+│       └── dbConfig.js
+│
+├── frontend/
+│   ├── student.html
+│   ├── teacher.html
+│   ├── login.html
+│   ├── app.js
+│   ├── style.css
+│   └── face-recognition/
+│       ├── script-face.js
+│       ├── face-api.min.js
+│       └── labels/
+│
+├── screenshots/
+│   ├── student-panel.png
+│   ├── teacher-dashboard.png
+│   └── attendance-record.png
+│
+├── README.md
+├── .gitignore
+└── LICENSE
